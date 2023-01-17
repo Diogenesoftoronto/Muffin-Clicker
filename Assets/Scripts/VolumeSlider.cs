@@ -19,10 +19,11 @@ public class VolumeSlider : MonoBehaviour
     {
         // On start we want set the volume to the default
         // Find the BackgroundMusic Game Object.
-        music = GameObject.Find("/BackgroundMusic");
+        music = GameObject.Find("BackgroundMusic");
         // get component throws an exception if this it doesn not find an audio source :(
         musicAudioComponent = music.GetComponent<AudioSource>();
         musicAudioComponent.volume = defaultVolume;
+        Debug.Log("Hello");
     }
 
     // Update is called once per frame
