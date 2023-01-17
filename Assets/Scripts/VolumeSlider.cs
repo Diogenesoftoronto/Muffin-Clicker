@@ -23,7 +23,6 @@ public class VolumeSlider : MonoBehaviour
         // get component throws an exception if this it doesn not find an audio source :(
         musicAudioComponent = music.GetComponent<AudioSource>();
         musicAudioComponent.volume = defaultVolume;
-        Debug.Log("Hello");
     }
 
     // Update is called once per frame

@@ -33,6 +33,17 @@ public class IncrementMuffin : MonoBehaviour
 
     public void OnMuffinClick() 
     {
+      // add a one percent random chance for the modifier of muffin count to change
+        int _randomNumber = Random.Range(0, 100);
+        if (_randomNumber == 1) 
+        {
+            _modifier = 1000;
+        }
+        else 
+        {
+            _modifier = 0;
+        }
+
         _muffinCount += 1 + _modifier;
         string _muffinString = _muffinCount.ToString();
         // alter the text in the muffin count object
